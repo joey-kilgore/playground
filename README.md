@@ -1,1 +1,2 @@
-THIS IS A TEST!
+THIS IS A TEST!  
+I added a second line
