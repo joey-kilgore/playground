@@ -79,7 +79,10 @@ def saveArticlesToFile(titles, links):
     fileName = 'scrapedArticles_'+dateTime+'.txt'
     file = open(fileName, 'w')
     for i in range(len(titles)):
-        file.write(titles[i])
+        try:
+            file.write(titles[i])
+        except:
+            file.write("unknown title")
         file.write(links[i])
         file.write('\n\n')
 
