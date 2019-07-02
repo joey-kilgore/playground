@@ -83,6 +83,7 @@ def saveArticlesToFile(titles, links):
             file.write(titles[i])
         except:
             file.write('Unknown Title')
+
         file.write(links[i])
         file.write('\n\n')
 
@@ -100,6 +101,7 @@ def main():
     startTime = time.time()
     links = getArticleLinks(url)
     pool = ThreadPool(30)
+
     titles = pool.map(getTitle, links)
     totalTime = time.time()-startTime
     print('TITLES FOUND: ' + str(len(titles)))
