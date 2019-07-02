@@ -43,10 +43,10 @@ writer.writerow(['Name', 'Job Title', 'Company', 'College', 'Location', 'URL'])
 driver = webdriver.Chrome('C:/Users/Joey/Downloads/Install Files/chromedriver_win32/chromedriver.exe')
 
 # driver.get method() will navigate to a page given by the URL address
-driver.get('https://www.linkedin.com')
+driver.get('https://www.linkedin.com/uas/login?trk=guest_homepage-basic_nav-header-signin')
 
 # locate email form by_class_name
-username = driver.find_element_by_class_name('login-email')
+username = driver.find_element_by_id('username')
 
 # send_keys() to simulate key strokes
 print("SENDING USERNAME")
@@ -56,7 +56,7 @@ username.send_keys(parameters.linkedin_username)
 sleep(0.5)
 
 # locate password form by_class_name
-password = driver.find_element_by_class_name('login-password')
+password = driver.find_element_by_id('password')
 
 # send_keys() to simulate key strokes
 print("SENDING PASSWORD")
@@ -68,7 +68,7 @@ sign_in_button = driver.find_element_by_xpath('//*[@type="submit"]')
 
 # .click() to mimic button click
 sign_in_button.click()
-sleep(0.5)
+sleep(50)
 
 # driver.get method() will navigate to a page given by the URL address
 driver.get('https:www.google.com')
