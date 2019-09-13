@@ -3,3 +3,4 @@ parameters.py
 __pycache__/parameters.cpython-36.pyc
 keys.json
 .vscode/settings.json
+*.pyc

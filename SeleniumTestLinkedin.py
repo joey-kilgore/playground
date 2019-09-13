@@ -45,6 +45,9 @@ driver = webdriver.Chrome('C:/Users/Joey/Downloads/Install Files/chromedriver_wi
 # driver.get method() will navigate to a page given by the URL address
 driver.get('https://www.linkedin.com/uas/login?trk=guest_homepage-basic_nav-header-signin')
 
+sleep(20)
+
+
 # locate email form by_class_name
 username = driver.find_element_by_id('username')
 

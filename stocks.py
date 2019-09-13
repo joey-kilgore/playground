@@ -15,6 +15,7 @@ with open('keys.json') as f:
 apikey = keys['AlphaAdvantageKey']
 # url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=' + ticker + '&interval='+interval+'&outputsize=full&apikey='+apikey
 url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=' + ticker + '&outputsize=full&apikey='+apikey
+print(url)
 r = requests.get(url)
 result = r.json()
 dataForAllDays = result['Time Series (Daily)']
@@ -60,6 +61,7 @@ p.vbar(df.date[dec], w, df.open[dec], df.close[dec], fill_color="#F2583E", line_
 output_file("stock_information.html", title="candlestick.py example")
 # Display in browser
 show(p)
+
 
 
 
