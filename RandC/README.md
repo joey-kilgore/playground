@@ -4,3 +4,8 @@ The makefile creates the executable that R calls (it also creates a blank data.c
 make  
 r callingCfromR.r
 ```
+Additionally there is an advanced version of R and C together. This utilizes R-Shiny for a wep application user interface, and then a C executable that utilizes OpenMP for increased speed.
+```
+make
+R -e "shiny::runApp('./callingMPfromShiny.r')"
+```
