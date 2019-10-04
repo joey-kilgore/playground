@@ -6,7 +6,6 @@ calledFromR.exe: calledFromR.c
 
 openmp: openMP.c
 	gcc -o openMP -fopenmp openMP.c
-	EXPORT OMP_NUM_THREADS=6
 
 clean:
 	rm data.csv
