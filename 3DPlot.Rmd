@@ -1,0 +1,68 @@
+---
+title: "Neuron3D"
+author: "Joey Kilgore"
+date: "10/18/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Generating 3d Plots
+All info is from [HERE](http://www.sthda.com/english/wiki/impressive-package-for-3d-and-4d-graph-r-software-and-data-visualization) and descibes everything. First install and load the plot3D package.
+```{r setupLibrary}
+#install.packages("plot3D")
+library("plot3D")
+```
+Now we should load in our data, for this example we will use some basic dummy data.
+```{r setData}
+t <- seq(0,50, by=.05)
+x <- t*cos(t)
+y <- t*sin(t)
+z <- x*y
+```
+### Boring 2D plots
+These are relatively simple 
+```{r make2DPlot}
+plot(x,y)
+plot(x,z)
+plot(y,z)
+```
+
+## Exciting 3D plots
+The fun stuff
+```{r make3DPlot}
+scatter3D(x, y, z, clab = c("Z"))
+```
+
+Chaning View (use theta and phi)
+```{r changeView}
+scatter3D(x, y, z, theta = 15, phi = 20)
+```
+
+Adding ticks and labels (bty is box type, ticktype is tick style, pch is point style, cex is size of point)
+```{r addingTicks}
+ scatter3D(x, y, z, phi = 0, bty = "g",
+        pch = 20, cex = .5, ticktype = "detailed")
+```
