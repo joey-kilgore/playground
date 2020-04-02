@@ -10,6 +10,23 @@
             "StackName": "amplify-todo-todo-123119",
             "StackId": "arn:aws:cloudformation:us-east-1:353705444272:stack/amplify-todo-todo-123119/711d0070-74ff-11ea-ba00-0ea47a628cf7",
             "AmplifyAppId": "d1vgx92zl1swyz"
+        },
+        "categories": {
+            "function": {
+                "todof93cb6f7CustomMessage": {
+                    "REDIRECTURL": "https://www.google.com",
+                    "EMAILSUBJECT": "Confirmation",
+                    "EMAILMESSAGE": "Confim..."
+                },
+                "todod511153aCustomMessage": {
+                    "REDIRECTURL": "https://www.google.com",
+                    "EMAILSUBJECT": "Confirmation",
+                    "EMAILMESSAGE": "Confirm..."
+                }
+            },
+            "auth": {
+                "todod511153a": {}
+            }
         }
     }
 }

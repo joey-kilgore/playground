@@ -73,4 +73,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ```amplify publish```  
 pushes to server and opens the app  
 
-
+```amplify push```
+pushes changes to aws server

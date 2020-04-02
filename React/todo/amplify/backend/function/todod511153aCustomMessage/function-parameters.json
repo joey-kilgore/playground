@@ -1,0 +1,24 @@
+{
+    "trigger": true,
+    "modules": [
+        "verification-link"
+    ],
+    "parentResource": "todod511153a",
+    "functionName": "todod511153aCustomMessage",
+    "resourceName": "todod511153aCustomMessage",
+    "parentStack": "auth",
+    "triggerEnvs": [
+        {
+            "key": "RESOURCENAME",
+            "value": "resourceName"
+        }
+    ],
+    "triggerDir": "C:\\Users\\Joey Kilgore\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-category-auth\\provider-utils\\awscloudformation\\utils/../triggers/CustomMessage",
+    "triggerTemplate": "CustomMessage.json.ejs",
+    "roleName": "todod511153aCustomMessage",
+    "skipEdit": true,
+    "REDIRECTURL": "https://www.google.com",
+    "EMAILSUBJECT": "Confirmation",
+    "EMAILMESSAGE": "Confirm...",
+    "RESOURCENAME": "resourceName"
+}

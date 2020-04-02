@@ -1,7 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Auth from 'aws-amplify';
+import awsconfig from './aws-exports';
+import { withAuthenticator } from 'aws-amplify-react';
+Auth.configure(awsconfig);
 function App() {
   return (
     <div className="App">
@@ -25,5 +28,6 @@ function App() {
     </div>
   );
 }
+export default withAuthenticator(App);
 
-export default App;
+//export default App;
