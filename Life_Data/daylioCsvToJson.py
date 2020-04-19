@@ -2,7 +2,7 @@ import json
 
 data = {}
 
-FILE_PATH = "C:/Users/Joey/Desktop/Stuff/Code/playground/Life_Data/daylio_export_2020_04_19.csv"
+FILE_PATH = "L:/Github Repos/playground/Life_Data/daylio_export_2020_04_19.csv"
 dataFile = open(FILE_PATH, 'r')
 
 # Using readlines() 
