@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import dayStyles from './daylio.css'
+import './daylio.css'
 
 var moodValue = {
     'rad' : 5,
@@ -17,7 +17,7 @@ class DayCard extends Component {
         var sumMood = 0;
         var numMood = 0;
         for (var key of Object.keys(day)) {
-            if(key != 'monthDate' && key != 'weekDay'){
+            if(key !== 'monthDate' && key !== 'weekDay'){
                 console.log(key);
                 sumMood += moodValue[day[key]['mood']];
                 numMood++;
@@ -25,10 +25,10 @@ class DayCard extends Component {
         }
         var avgMood = (sumMood/numMood).toFixed(1);
         return(
-            <div>
-                <div className={dayStyles.cardTitle}>{day.monthDate}</div>
-                <p>{day.weekDay}</p>
-                <p>{avgMood}/5.0</p>
+            <div className="card">
+                <h2 className="cardDay">{day.weekDay}</h2>
+                <p className="cardDate">{day.monthDate}</p>
+                <p className="mood">{avgMood}/5.0</p>
             </div>
         )
     }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Title(){
     return(
-        <h1>Life Data</h1>
+        <h1 style={{color:"white"}}>Life Data</h1>
     )
 }
 

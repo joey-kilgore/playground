@@ -12,11 +12,11 @@ class App extends Component {
         <Title />
         <table style={{width:"100%"}}>
           <tr>
-            <td><DayCard day={data['2020-04-17']}/></td>
-            <td><DayCard day={data['2020-04-16']}/></td>
-            <td><DayCard day={data['2020-04-15']}/></td>
-            <td><DayCard day={data['2020-04-14']}/></td>
-            <td><DayCard day={data['2020-04-13']}/></td>
+            <td style={{width:"18%"}}><DayCard day={data['2020-04-17']}/></td>
+            <td style={{width:"18%"}}><DayCard day={data['2020-04-16']}/></td>
+            <td style={{width:"18%"}}><DayCard day={data['2020-04-15']}/></td>
+            <td style={{width:"18%"}}><DayCard day={data['2020-04-14']}/></td>
+            <td style={{width:"18%"}}><DayCard day={data['2020-04-13']}/></td>
           </tr>
         </table>
       </div>

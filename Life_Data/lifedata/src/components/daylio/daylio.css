@@ -1,5 +1,20 @@
-.cardTitle {
-    color: blue;
+.card {
+    border: 1px solid white
+}
+
+.cardDay {
+    color: #14ffec;
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+    font-size: larger;
+}
+
+.cardDate {
+    color: #0d7377;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+.mood {
+    color: #0d7377;
+
 }
