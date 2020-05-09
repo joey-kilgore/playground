@@ -37,7 +37,7 @@ for day in data:
             continue
 
         for act1 in data[day][event]['activities']:
-            if(act1 not in acts):
+            if(act1 not in acts and act1 != ''):
                 acts.append(act1)
 
 # we can sort them alphabetically (which can be nice)
@@ -59,7 +59,7 @@ for day in data:
             continue
         
         for act1 in data[day][event]['activities']:
-            if(act1 not in daysActs):
+            if(act1 not in daysActs and act1 != ''):
                 daysActs.append(act1)
             
     # at this point we have the list of all of the current days activitities
