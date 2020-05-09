@@ -1,7 +1,675 @@
 {
+    "2020-05-08": {
+        "monthDate": "May 8",
+        "weekDay": "Friday",
+        "11:01 AM": {
+            "mood": "good",
+            "activities": [
+                "meditation",
+                "reading papers",
+                "collecting data",
+                "making PowerPoint"
+            ],
+            "note": "\n"
+        },
+        "9:09 AM": {
+            "mood": "good",
+            "activities": [
+                "exercise",
+                "drink water",
+                "reading papers",
+                "collecting data"
+            ],
+            "note": "\n"
+        },
+        "7:03 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep",
+                "dream"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-05-07": {
+        "monthDate": "May 7",
+        "weekDay": "Thursday",
+        "9:00 PM": {
+            "mood": "good",
+            "activities": [
+                "relax",
+                "coding",
+                "meditation"
+            ],
+            "note": "\n"
+        },
+        "8:44 PM": {
+            "mood": "good",
+            "activities": [
+                "meditation",
+                "eat food",
+                "drink water",
+                "writing scripture"
+            ],
+            "note": "\n"
+        },
+        "5:42 PM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "relax",
+                "drink water",
+                "played worship songs"
+            ],
+            "note": "\n"
+        },
+        "2:35 PM": {
+            "mood": "rad",
+            "activities": [
+                "exercise",
+                "meditation",
+                "eat food",
+                "drink water",
+                "in the word",
+                "prayer",
+                "reading papers",
+                "collecting data",
+                "coding"
+            ],
+            "note": "\n"
+        },
+        "8:40 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep",
+                "dream"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-05-06": {
+        "monthDate": "May 6",
+        "weekDay": "Wednesday",
+        "11:26 PM": {
+            "mood": "good",
+            "activities": [
+                "friends",
+                "board games",
+                "relax"
+            ],
+            "note": "\n"
+        },
+        "8:00 PM": {
+            "mood": "good",
+            "activities": [
+                "relax",
+                "eat food",
+                "drink water",
+                "homework"
+            ],
+            "note": "\n"
+        },
+        "3:21 PM": {
+            "mood": "good",
+            "activities": [
+                "reading",
+                "relax",
+                "eat food",
+                "drink water",
+                "in the word",
+                "writing scripture",
+                "reading papers",
+                "meeting"
+            ],
+            "note": "\n"
+        },
+        "7:50 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep",
+                "dream"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-05-05": {
+        "monthDate": "May 5",
+        "weekDay": "Tuesday",
+        "9:14 PM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "eat food",
+                "drink water",
+                "in the word",
+                "writing scripture",
+                "GRE Prep",
+                "studying",
+                "homework"
+            ],
+            "note": "\n"
+        },
+        "12:55 PM": {
+            "mood": "good",
+            "activities": [
+                "good sleep",
+                "drink water",
+                "in the word",
+                "reading papers",
+                "collecting data"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-05-04": {
+        "monthDate": "May 4",
+        "weekDay": "Monday",
+        "8:01 PM": {
+            "mood": "good",
+            "activities": [
+                "eat food",
+                "drink water",
+                "GRE Prep",
+                "studying"
+            ],
+            "note": "\n"
+        },
+        "2:14 PM": {
+            "mood": "good",
+            "activities": [
+                "GRE Prep",
+                "homework"
+            ],
+            "note": "\n"
+        },
+        "12:17 PM": {
+            "mood": "good",
+            "activities": [
+                "exercise",
+                "drink water",
+                "in the word",
+                "writing"
+            ],
+            "note": "\n"
+        },
+        "9:29 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep",
+                "drink water",
+                "reading papers",
+                "collecting data",
+                "coding"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-05-03": {
+        "monthDate": "May 3",
+        "weekDay": "Sunday",
+        "8:00 PM": {
+            "mood": "good",
+            "activities": [
+                "family",
+                "playing music",
+                "relax",
+                "eat food",
+                "drink water",
+                "in the word",
+                "prayer",
+                "communal worship"
+            ],
+            "note": "\n"
+        },
+        "10:09 AM": {
+            "mood": "good",
+            "activities": [
+                "medium sleep",
+                "dream"
+            ],
+            "note": "\n"
+        },
+        "12:36 AM": {
+            "mood": "good",
+            "activities": [
+                "friends",
+                "reading"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-05-02": {
+        "monthDate": "May 2",
+        "weekDay": "Saturday",
+        "8:00 PM": {
+            "mood": "meh",
+            "activities": [
+                "playing music",
+                "relax",
+                "GRE Prep",
+                "studying",
+                "homework"
+            ],
+            "note": "\n"
+        },
+        "8:48 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep",
+                "dream"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-05-01": {
+        "monthDate": "May 1",
+        "weekDay": "Friday",
+        "8:10 PM": {
+            "mood": "good",
+            "activities": [
+                "friends",
+                "coding",
+                "good sleep",
+                "eat food",
+                "drink water",
+                "reading papers"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-04-30": {
+        "monthDate": "April 30",
+        "weekDay": "Thursday",
+        "8:00 PM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "relax",
+                "good sleep",
+                "exercise",
+                "drink water",
+                "GRE Prep",
+                "lecture",
+                "studying"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-04-29": {
+        "monthDate": "April 29",
+        "weekDay": "Wednesday",
+        "8:16 PM": {
+            "mood": "good",
+            "activities": [
+                "eat food",
+                "drink water",
+                "prayer",
+                "communal worship",
+                "GRE Prep"
+            ],
+            "note": "\n"
+        },
+        "3:22 PM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "drink water",
+                "reading papers",
+                "collecting data",
+                "meeting"
+            ],
+            "note": "\n"
+        },
+        "8:34 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-04-28": {
+        "monthDate": "April 28",
+        "weekDay": "Tuesday",
+        "9:09 PM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "played worship songs"
+            ],
+            "note": "\n"
+        },
+        "6:07 PM": {
+            "mood": "good",
+            "activities": [
+                "drink water",
+                "drink caffeine",
+                "GRE Prep",
+                "lecture",
+                "studying"
+            ],
+            "note": "\n"
+        },
+        "8:53 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep",
+                "drink water",
+                "lecture"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-04-27": {
+        "monthDate": "April 27",
+        "weekDay": "Monday",
+        "8:00 PM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "reading",
+                "eat food",
+                "drink water",
+                "reading papers",
+                "collecting data"
+            ],
+            "note": "\n"
+        },
+        "10:07 AM": {
+            "mood": "good",
+            "activities": [
+                "eat food",
+                "drink water",
+                "drink caffeine",
+                "writing",
+                "collecting data"
+            ],
+            "note": "\n"
+        },
+        "8:35 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep",
+                "dream"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-04-26": {
+        "monthDate": "April 26",
+        "weekDay": "Sunday",
+        "8:30 PM": {
+            "mood": "meh",
+            "activities": [
+                "friends",
+                "reading",
+                "board games",
+                "studying"
+            ],
+            "note": "\n"
+        },
+        "4:08 PM": {
+            "mood": "good",
+            "activities": [
+                "family",
+                "friends",
+                "reading",
+                "relax",
+                "drink water",
+                "played worship songs",
+                "in the word",
+                "prayer",
+                "communal worship",
+                "studying"
+            ],
+            "note": "\n"
+        },
+        "9:00 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep",
+                "dream"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-04-25": {
+        "monthDate": "April 25",
+        "weekDay": "Saturday",
+        "8:26 PM": {
+            "mood": "good",
+            "activities": [
+                "reading"
+            ],
+            "note": "\n"
+        },
+        "5:34 PM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "relax",
+                "drink water",
+                "in the word",
+                "prayer",
+                "communal worship",
+                "collecting data",
+                "studying"
+            ],
+            "note": "\n"
+        },
+        "9:07 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep",
+                "dream"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-04-24": {
+        "monthDate": "April 24",
+        "weekDay": "Friday",
+        "9:03 PM": {
+            "mood": "good",
+            "activities": [
+                "reading",
+                "eat food",
+                "drink water",
+                "collecting data"
+            ],
+            "note": "\n"
+        },
+        "2:56 PM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "reading",
+                "drink water",
+                "drink caffeine",
+                "played worship songs",
+                "reading papers",
+                "collecting data"
+            ],
+            "note": "\n"
+        },
+        "8:06 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-04-23": {
+        "monthDate": "April 23",
+        "weekDay": "Thursday",
+        "8:03 PM": {
+            "mood": "good",
+            "activities": [
+                "reading",
+                "eat food",
+                "drink water",
+                "lecture"
+            ],
+            "note": "\n"
+        },
+        "11:40 AM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "drink water",
+                "drink caffeine",
+                "homework"
+            ],
+            "note": "\n"
+        },
+        "9:32 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep",
+                "exercise",
+                "drink water",
+                "in the word",
+                "lecture",
+                "homework"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-04-22": {
+        "monthDate": "April 22",
+        "weekDay": "Wednesday",
+        "8:02 PM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "reading",
+                "eat food",
+                "prayer",
+                "communal worship",
+                "reading papers",
+                "meeting"
+            ],
+            "note": "\n"
+        },
+        "10:09 AM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "good sleep",
+                "drink water",
+                "drink caffeine",
+                "reading papers",
+                "making PowerPoint"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-04-21": {
+        "monthDate": "April 21",
+        "weekDay": "Tuesday",
+        "10:44 PM": {
+            "mood": "good",
+            "activities": [
+                "friends",
+                "gaming"
+            ],
+            "note": "\n"
+        },
+        "8:02 PM": {
+            "mood": "good",
+            "activities": [
+                "reading",
+                "eat food",
+                "drink water",
+                "in the word",
+                "lecture",
+                "homework"
+            ],
+            "note": "\n"
+        },
+        "10:42 AM": {
+            "mood": "good",
+            "activities": [
+                "good sleep",
+                "drink water",
+                "drink caffeine",
+                "lecture",
+                "homework"
+            ],
+            "note": "\n"
+        }
+    },
+    "2020-04-20": {
+        "monthDate": "April 20",
+        "weekDay": "Monday",
+        "8:29 PM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "reading",
+                "eat food",
+                "in the word",
+                "reading papers"
+            ],
+            "note": "\n"
+        },
+        "11:53 AM": {
+            "mood": "good",
+            "activities": [
+                "played worship songs",
+                "in the word"
+            ],
+            "note": "\n"
+        },
+        "10:59 AM": {
+            "mood": "good",
+            "activities": [
+                "drink water",
+                "reading papers",
+                "making PowerPoint"
+            ],
+            "note": "\n"
+        },
+        "6:15 AM": {
+            "mood": "good",
+            "activities": [
+                "sleep early",
+                "dream"
+            ],
+            "note": "\n"
+        }
+    },
     "2020-04-19": {
         "monthDate": "April 19",
         "weekDay": "Sunday",
+        "6:16 PM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "reading"
+            ],
+            "note": "\n"
+        },
+        "4:26 PM": {
+            "mood": "good",
+            "activities": [
+                "playing music",
+                "relax",
+                "coding"
+            ],
+            "note": "\n"
+        },
+        "11:01 AM": {
+            "mood": "good",
+            "activities": [
+                "family",
+                "in the word",
+                "prayer",
+                "communal worship"
+            ],
+            "note": "\n"
+        },
         "9:45 AM": {
             "mood": "good",
             "activities": [
@@ -607,8 +1275,8 @@
             "activities": [
                 "movies & tv",
                 "reading",
-                "in the word",
-                "played worship songs"
+                "played worship songs",
+                "in the word"
             ],
             "note": "\n"
         },
@@ -658,8 +1326,8 @@
             "activities": [
                 "exercise",
                 "drink water",
-                "in the word",
-                "played worship songs"
+                "played worship songs",
+                "in the word"
             ],
             "note": "\n"
         },
