@@ -24,6 +24,14 @@ class MidpointNormalize(colors.Normalize):
 # load in data set
 data = json.load(open("./Life_Data/daylio.json"))
 
+# adjust dataset to only include more recent dates
+newData = {}
+for day in data:
+    if(datetime.strptime(day, "%Y-%m-%d") >= datetime.strptime("2020-05-01", "%Y-%m-%d")):
+        newData[day] = data[day]
+data = newData
+
+
 # we need to get the complete list of activities, and the number of days in the dataset
 acts = []
 numDays = 0
@@ -101,7 +109,7 @@ df = df.reindex(newActs)
 print(df)
 
 # Setup the plot
-plt.imshow(df, cmap='viridis', norm=MidpointNormalize(midpoint=10,vmin=1, vmax=30))
+plt.imshow(df, cmap='viridis', norm=MidpointNormalize(midpoint=5,vmin=1, vmax=15))
 plt.colorbar()
 plt.yticks(np.arange(0, len(df.index), 1), df.index)
 plt.xticks(np.arange(0, len(df.columns), 1), df.columns, rotation=90)
@@ -120,7 +128,12 @@ for i in range(len(df.index)):
             val = int(df.iloc[i, j])
         except:
             val = ''
-        text = ax.text(j, i, val,ha="center", va="center", color="white")
+        if(val==''):
+            text = ax.text(j, i, val,ha="center", va="center", color="white")
+        elif(int(val)<10):
+            text = ax.text(j, i, val,ha="center", va="center", color="white")
+        else:
+            text = ax.text(j, i, val,ha="center", va="center", color="black")
 
 plt.title(str(numDays)+" Days of Activities", loc='center')
 plt.show()
