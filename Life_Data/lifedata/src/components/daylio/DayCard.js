@@ -12,13 +12,13 @@ var moodValue = {
 
 class DayCard extends Component {
     render(){
-        console.log(this.props.day);
+        //console.log(this.props.day);
         const day = this.props.day;
         var sumMood = 0;
         var numMood = 0;
         for (var key of Object.keys(day)) {
             if(key !== 'monthDate' && key !== 'weekDay'){
-                console.log(key);
+                //console.log(key);
                 sumMood += moodValue[day[key]['mood']];
                 numMood++;
             }
