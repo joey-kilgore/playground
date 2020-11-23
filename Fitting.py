@@ -2,8 +2,9 @@ import numpy as np
 from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 
-x_data = np.array([40,50,60,70,80,160])
-y_data = np.array([30859.375,30156.25,29531.25,29062.5,28750,28066.406])
+x_data = np.array([40,50,60,70,80,160,250])
+#y_data = np.array([30859.375,30156.25,29531.25,29062.5,28750,28066.406,2597.66])
+y_data = np.array([0,2.278481013,4.303797468,5.82278481,6.835443038,9.050633722,10.56962106])
 params = np.array([1,1])
 
 
@@ -15,7 +16,7 @@ params = np.array([1,1])
 
 def funcinv(x, a, b, c):
     # The inverse funciton
-    return b + a/(x - c)
+    return c*np.power((a+x), b)
 
 # popt - optimal params after least squares
 # pcov - estimated covariance of popt
