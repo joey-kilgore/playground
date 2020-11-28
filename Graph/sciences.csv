@@ -1,0 +1,64 @@
+from,to,weight
+supernatural,agriculture,1
+supernatural,social work,1
+supernatural,applied services,1
+supernatural,education,2
+supernatural,political science,2
+supernatural,law,2
+supernatural,ethics,2
+supernatural,humanities,4
+supernatural,history,5
+supernatural,theology,10
+supernatural,philosophy,7
+supernatural,literature,8
+supernatural,arts,8
+supernatural,social science,2
+supernatural,antropology,2
+supernatural,life science,2
+supernatural,logic,1
+natural,agriculture,5
+natural,social work,5
+natural,economics,5
+natural,applied services,6
+natural,education,5
+natural,political science,6
+natural,law,5
+natural,ethics,5
+natural,humanities,7
+natural,history,8
+natural,theology,2
+natural,philosophy,3
+natural,literature,4
+natural,arts,4
+natural,social science,5
+natural,antropology,5
+natural,life science,9
+natural,logic,5
+natural,natural science,9
+natural,formal science,10
+natural,personal experience,20
+supernatural,personal experience,20
+agriculture,social work,8
+agriculture,economics,8
+agriculture,applied services,8
+social work,agriculture,8
+social work,economics,8
+social work,applied services,8
+economics,agriculture,8
+economics,social work,8
+economics,applied services,8
+applied services,agriculture,8
+applied services,social work,8
+applied services,economics,8
+education,political science,8
+education,law,8
+education,ethics,8
+political science,education,8
+political science,law,8
+political science,ethics,8
+law,education,8
+law,political science,8
+law,ethics,8
+ethics,education,8
+ethics,political science,8
+ethics,law,8
