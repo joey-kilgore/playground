@@ -4,6 +4,7 @@
 library(reshape)
 library(ggplot2)
 library(plotly)
+library(grid)
 library(gridExtra)
 data <- read.csv("games.csv",header=TRUE)
 data_melt <- melt(data, id=c("gameID","player","num_players","rank"))
@@ -13,7 +14,7 @@ data_melt <- melt(data, id=c("gameID","player","num_players","rank"))
 # ------------
 overall_violin <- ggplot(data=data_melt,aes(x=variable,y=value)) + 
     geom_violin(aes(fill=variable))+
-    geom_boxplot(width=0.05)+
+    geom_boxplot(width=0.1)+
     scale_fill_manual(values=c("#ff5447","#ffd770","#ffffff","#21aeff","#fffc63","#d063ff","#80ff63","#000000"))+
     theme(legend.position = "none")+
     xlab("Point Category")+
@@ -23,7 +24,7 @@ overall_violin <- ggplot(data=data_melt,aes(x=variable,y=value)) +
 
 my_violin <- ggplot(data=data_melt[data_melt$player == "Me",],aes(x=variable,y=value)) + 
     geom_violin(aes(fill=variable))+
-    geom_boxplot(width=0.05)+
+    geom_boxplot(width=0.1)+
     scale_fill_manual(values=c("#ff5447","#ffd770","#ffffff","#21aeff","#fffc63","#d063ff","#80ff63","#000000"))+
     theme(legend.position = "none")+
     xlab("Point Category")+
@@ -33,7 +34,7 @@ my_violin <- ggplot(data=data_melt[data_melt$player == "Me",],aes(x=variable,y=v
 
 dad_violin <- ggplot(data=data_melt[data_melt$player == "Dad",],aes(x=variable,y=value)) + 
     geom_violin(aes(fill=variable))+
-    geom_boxplot(width=0.05)+
+    geom_boxplot(width=0.1)+
     scale_fill_manual(values=c("#ff5447","#ffd770","#ffffff","#21aeff","#fffc63","#d063ff","#80ff63","#000000"))+
     theme(legend.position = "none")+
     xlab("Point Category")+
@@ -94,5 +95,6 @@ lay <- rbind(c(1,2),
                 c(5,4),
                 c(5,4))
 
-final_combined <- grid.arrange(rankings_bar, overall_violin, my_violin, dad_violin, correlation_heatmap,layout_matrix=lay)
+final_combined <- grid.arrange(rankings_bar, overall_violin, my_violin, dad_violin, correlation_heatmap,layout_matrix=lay,
+                               top = textGrob("7 Wonders Score Breakdown",gp=gpar(fontsize=20,font=2)))
 ggsave("./7wonders.png",final_combined, height=10,width=12)
