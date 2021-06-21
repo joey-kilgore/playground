@@ -1,13 +1,12 @@
 # -----------------------
 # Load data and libraries
 # -----------------------
-
-data <- read.csv("games.csv",header=TRUE)
-data_melt <- melt(data, id=c("gameID","player","num_players","rank"))
 library(reshape)
 library(ggplot2)
 library(plotly)
 library(gridExtra)
+data <- read.csv("games.csv",header=TRUE)
+data_melt <- melt(data, id=c("gameID","player","num_players","rank"))
 
 # ------------
 # violin plots
@@ -20,7 +19,7 @@ overall_violin <- ggplot(data=data_melt,aes(x=variable,y=value)) +
     xlab("Point Category")+
     ylab("Number of Points")+
     ylim(-6,68)+
-    ggtitle("Overall Point Distribution")
+    ggtitle("Overall Point Distribution (N=133)")
 
 my_violin <- ggplot(data=data_melt[data_melt$player == "Me",],aes(x=variable,y=value)) + 
     geom_violin(aes(fill=variable))+
@@ -30,7 +29,7 @@ my_violin <- ggplot(data=data_melt[data_melt$player == "Me",],aes(x=variable,y=v
     xlab("Point Category")+
     ylab("Number of Points")+
     ylim(-6,68)+
-    ggtitle("My Point Distribution")
+    ggtitle("My Point Distribution (N=32)")
 
 dad_violin <- ggplot(data=data_melt[data_melt$player == "Dad",],aes(x=variable,y=value)) + 
     geom_violin(aes(fill=variable))+
@@ -40,7 +39,7 @@ dad_violin <- ggplot(data=data_melt[data_melt$player == "Dad",],aes(x=variable,y
     xlab("Point Category")+
     ylab("Number of Points")+
     ylim(-6,68)+
-    ggtitle("Dad's Point Distribution")
+    ggtitle("Dad's Point Distribution (N=24)")
 
 combined_violin <- grid.arrange(overall_violin,my_violin,dad_violin,ncol=1)
 
@@ -57,10 +56,12 @@ for(name in unique(data$player)){
 }
 ranks <- ranks[-1,]
 ranks <- ranks[ranks$player %in% c("Me","Dad","Mom","Matt"),]
+ranks$player <- factor(ranks$player,levels = c("Me","Dad","Mom","Matt"))
 rankings_bar <- ggplot(data=ranks,aes(x=player,y=as.numeric(occurences),fill=rank))+
     geom_bar(stat="identity",position=position_dodge())+
+    scale_fill_manual(label=c("1st","2nd","3rd","4th","5th","6th","7th"),values=c("darkgoldenrod1","grey60","#CD7F32","coral4","indianred1","deeppink","purple"))+
     ylab("Frequency")+
-    ggtitle("Frequency of Player Ranking")
+    ggtitle("Frequency of Player Ranking (Top 4/29 Players, N=92)")
 
 
 # -----------------
@@ -79,7 +80,7 @@ correlation_heatmap <- ggplot(data = melted_cormat, aes(x=X1, y=X2, fill=value))
                                      size = 12, hjust = 1),
           axis.title.x = element_blank(),
           axis.title.y = element_blank())+
-    ggtitle("Point Category Correlation Matrix")+
+    ggtitle("Point Category Correlation Matrix (N=133)")+
     coord_fixed()
 
 # --------------------
