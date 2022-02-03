@@ -16,12 +16,14 @@
  top=20mm,
  }
  
-\setlength\extrarowheight{20pt}
+\setlength\extrarowheight{18pt}
 \pagestyle{empty}
 \begin{document}
 \begin{tabular}{| L | L | @{\hspace{12em}}|@{\hspace{12em}}|}
 \hline
 f(t) & F(w) \\
+\hline
+f(t) & \int_{-\infty}^\infty e^{-jwt} f(t)\, dt\\
 \hline
 af(t) + bg(t) & aF(w) + bG(w) \\
 \hline
@@ -43,7 +45,7 @@ f(t)sin(at) & \frac{1}{2j}(F(w - \frac{a}{2\pi}) - F(w + \frac{a}{2\pi})) \\
 \hline
 rect(at) & \frac{1}{|a|}sinc(w- \frac{a}{2\pi}) \\
 \hline
-sinc(at) & \frac{1}{|a|} rect(w - \frac{a}{2\pi}}) \\
+sinc(at) & \frac{1}{|a|} rect(w - \frac{a}{2\pi}) \\
 \hline
 e^{-at}u(t) & \frac{1}{a- 2 \pi jw} \\
 \hline
