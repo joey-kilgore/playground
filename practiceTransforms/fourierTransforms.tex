@@ -1,0 +1,63 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amstext} % for \text macro
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=10mm,
+ top=10mm,
+ }
+ 
+\setlength\extrarowheight{20pt}
+\pagestyle{empty}
+\begin{document}
+\begin{tabular}{| L | L | @{\hspace{12em}}|@{\hspace{12em}}|}
+\hline
+f(t) & F(w) \\
+\hline
+af(t) + bg(t) & aF(w) + bG(w) \\
+\hline
+f(t-a) & e^{-2\pi jaw}F(w) \\
+\hline
+f(t)e^{jat} & F(w - \frac{a}{2\pi}) \\
+\hline
+f(at) & \frac{1}{|a|}F(\frac{w}{a}) \\
+\hline
+\frac{d^n t f(t)}{dt^n} & (2 \pi jw)^n F(w) \\
+\hline
+t^n f(t) & (\frac{j}{2\pi})^n \frac{d^n w F(w)}{dw^n} \\
+\hline
+(f \star g)(t) & F(w)G(w) \\
+\hline
+f(t)cos(at) & \frac{1}{2}(F(w - \frac{a}{2\pi}) + F(w + \frac{a}{2\pi})) \\ 
+\hline
+f(t)sin(at) & \frac{1}{2j}(F(w - \frac{a}{2\pi}) - F(w + \frac{a}{2\pi})) \\ 
+\hline
+rect(at) & \frac{1}{|a|}sinc(w- \frac{a}{2\pi}) \\
+\hline
+sinc(at) & \frac{1}{|a|} rect(w - \frac{a}{2\pi}}) \\
+\hline
+e^{-at}u(t) & \frac{1}{a- 2 \pi jw} \\
+\hline
+1 & \delta(w) \\
+\hline
+\delta(t) & 1 \\
+\hline
+e^{jat} & \delta(w- \frac{a}{2\pi}) \\
+\hline
+cos(at) & \frac{1}{2}(\delta(w-\frac{a}{2\pi}) + \delta(w+\frac{a}{2\pi})) \\
+\hline
+sin(at) & \frac{1}{2j}(\delta(w-\frac{a}{2\pi}) - \delta(w+\frac{a}{2\pi})) \\
+\hline
+\frac{1}{t} & -j \pi u(w) \\
+\hline
+\end{tabular}
+\end{document}
