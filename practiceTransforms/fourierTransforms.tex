@@ -27,39 +27,39 @@ f(t) & \int_{-\infty}^\infty e^{-jwt} f(t)\, dt\\
 \hline
 af(t) + bg(t) & aF(w) + bG(w) \\
 \hline
-f(t-a) & e^{-2\pi jaw}F(w) \\
+f(t-a) & e^{-jaw}F(w) \\
 \hline
-f(t)e^{jat} & F(w - \frac{a}{2\pi}) \\
+f(t)e^{jat} & F(w - a) \\
 \hline
 f(at) & \frac{1}{|a|}F(\frac{w}{a}) \\
 \hline
-\frac{d^n t f(t)}{dt^n} & (2 \pi jw)^n F(w) \\
+\frac{d^n t f(t)}{dt^n} & (jw)^n F(w) \\
 \hline
-t^n f(t) & (\frac{j}{2\pi})^n \frac{d^n w F(w)}{dw^n} \\
+t^n f(t) & (j)^n \frac{d^n w F(w)}{dw^n} \\
 \hline
 (f \star g)(t) & F(w)G(w) \\
 \hline
-f(t)cos(at) & \frac{1}{2}(F(w - \frac{a}{2\pi}) + F(w + \frac{a}{2\pi})) \\ 
+f(t)cos(at) & \frac{1}{2}(F(w - a) + F(w + a)) \\ 
 \hline
-f(t)sin(at) & \frac{1}{2j}(F(w - \frac{a}{2\pi}) - F(w + \frac{a}{2\pi})) \\ 
+f(t)sin(at) & \frac{1}{2j}(F(w - a) - F(w + a)) \\ 
 \hline
-rect(at) & \frac{1}{|a|}sinc(w- \frac{a}{2\pi}) \\
+rect(at) & \frac{1}{\sqrt{2 \pi a^2}}sinc(w- \frac{w}{2 \pi a}) \\
 \hline
-sinc(at) & \frac{1}{|a|} rect(w - \frac{a}{2\pi}) \\
+sinc(at) & \frac{1}{\sqrt{2 \pi a^2}}rect(w- \frac{w}{2 \pi a}) \\
 \hline
-e^{-at}u(t) & \frac{1}{a- 2 \pi jw} \\
+e^{-at}u(t) & \frac{1}{\sqrt{2 \pi} (a + jw)} \\
 \hline
-1 & \delta(w) \\
+1 & \sqrt{2 \pi } \delta(w) \\
 \hline
-\delta(t) & 1 \\
+\delta(t) & \frac{1}{\sqrt{2 \pi}} \\
 \hline
-e^{jat} & \delta(w- \frac{a}{2\pi}) \\
+e^{jat} & \sqrt{2\pi}\delta(w- a) \\
 \hline
-cos(at) & \frac{1}{2}(\delta(w-\frac{a}{2\pi}) + \delta(w+\frac{a}{2\pi})) \\
+cos(at) & \frac{\sqrt{2\pi}}{2}(\delta(w-a) + \delta(w+a)) \\
 \hline
-sin(at) & \frac{1}{2j}(\delta(w-\frac{a}{2\pi}) - \delta(w+\frac{a}{2\pi})) \\
+sin(at) & \frac{\sqrt{2\pi}}{2j}(\delta(w-a) + \delta(w+a)) \\
 \hline
-\frac{1}{t} & -j \pi u(w) \\
+\frac{1}{t} & -j \sqrt{\frac{\pi}{2}} sign(w) \\
 \hline
 \end{tabular}
 \\
