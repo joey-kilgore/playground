@@ -1,0 +1,71 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amstext} % for \text macro
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=10mm,
+ top=20mm,
+ }
+ 
+\setlength\extrarowheight{18pt}
+\pagestyle{empty}
+\begin{document}
+\begin{tabular}{| L | L | @{\hspace{12em}}|@{\hspace{12em}}|}
+\hline
+f(t) & F(w) \\
+\hline
+f(t) & \int_{-\infty}^\infty e^{-jwt} f(t)\, dt\\
+\hline
+af(t) + bg(t) & aF(w) + bG(w) \\
+\hline
+f(t-a) & e^{-jaw}F(w) \\
+\hline
+f(t)e^{jat} & F(w - a) \\
+\hline
+f(at) & \frac{1}{|a|}F(\frac{w}{a}) \\
+\hline
+\frac{d^n t f(t)}{dt^n} & (jw)^n F(w) \\
+\hline
+t^n f(t) & (j)^n \frac{d^n w F(w)}{dw^n} \\
+\hline
+(f \star g)(t) & F(w)G(w) \\
+\hline
+f(t)cos(at) & \frac{1}{2}(F(w - a) + F(w + a)) \\ 
+\hline
+f(t)sin(at) & \frac{1}{2j}(F(w - a) - F(w + a)) \\ 
+\hline
+rect(at) & \frac{1}{\sqrt{2 \pi a^2}}sinc(\frac{w}{2 \pi a}) \\
+\hline
+sinc(at) & \frac{1}{\sqrt{2 \pi a^2}}rect(\frac{w}{2 \pi a}) \\
+\hline
+e^{-at}u(t) & \frac{1}{\sqrt{2 \pi} (a + jw)} \\
+\hline
+1 & \sqrt{2 \pi } \delta(w) \\
+\hline
+\delta(t) & \frac{1}{\sqrt{2 \pi}} \\
+\hline
+e^{jat} & \sqrt{2\pi}\delta(w- a) \\
+\hline
+cos(at) & \frac{\sqrt{2\pi}}{2}(\delta(w-a) + \delta(w+a)) \\
+\hline
+sin(at) & \frac{\sqrt{2\pi}}{2j}(\delta(w-a) + \delta(w+a)) \\
+\hline
+\frac{1}{t} & -j \sqrt{\frac{\pi}{2}} sign(w) \\
+\hline
+\end{tabular}
+\\
+
+\begin{flushleft}
+For the \LaTeX file see  \\
+https://github.com/joey-kilgore/playground and look for the practiceTransforms folder
+\end{flushleft}
+\end{document}

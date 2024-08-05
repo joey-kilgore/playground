@@ -6,3 +6,8 @@ keys.json
 *.pyc
 3DPlot.html
 summary.json
+.Rproj.user
+*.gz
+*.aux
+practiceTransforms/fourierTransforms.log
+practiceTransforms/laplaceTransforms.log
